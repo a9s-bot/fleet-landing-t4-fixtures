@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" fill="#0a0a0a"/>
+  <g transform="translate(6 1.5) scale(0.28)" style="mix-blend-mode: screen;">
+    <path opacity="0.3" d="M1 20V70L44.3013 45L1 20Z" fill="#84CC16" stroke="#84CC16" stroke-width="2" stroke-linejoin="round"/>
+    <path opacity="0.3" d="M1 45V95L44.3013 70L1 45Z" fill="#10B981" stroke="#10B981" stroke-width="2" stroke-linejoin="round"/>
+    <path opacity="0.6" d="M22.6506 32.5V82.5L65.9519 57.5L22.6506 32.5Z" fill="#22C55E" stroke="#22C55E" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+</svg>
