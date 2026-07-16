@@ -1,5 +1,5 @@
 const menuButton = document.querySelector('.menu-button');
-const nav = document.querySelector('.nav');
+const nav = document.querySelector('.site-nav');
 
 if (menuButton && nav) {
   const setMenuOpen = (open) => {
