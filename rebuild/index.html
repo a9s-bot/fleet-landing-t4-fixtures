@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fleet runs managed agent teams as a continuous operation: provisioned access, visible work, Slack steering, and usage controls.">
+  <title>Fleet — managed agent teams</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Fleet home"><span class="brand-mark" aria-hidden="true">F/</span><span>fleet</span></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="nav" aria-label="Main navigation">
+      <a href="#operation">The operation</a><a href="#control">Control</a><a href="#fit">Fit</a><a href="https://lanes.build">Lanes ↗</a>
+    </nav>
+    <a class="header-cta" href="https://fleet.build/estimate">Get a Fleet estimate <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="kicker"><span class="status-dot"></span> Managed agent teams</p>
+        <h1 id="hero-title">Run agents like a team—not a demo.</h1>
+        <p class="hero-lede">Fleet gives founders a standing operation that can work continuously: the right access, a shared queue, visible pull requests, and a Slack channel for steering what happens next.</p>
+        <div class="hero-actions">
+          <a class="button button-signal" href="https://fleet.build/estimate">Get a Fleet estimate <span aria-hidden="true">↗</span></a>
+          <a class="button button-ghost" href="https://app.lanes.build">Deploy with Lanes <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="microcopy">Start with a Fleet estimate for a managed operation. For an engineering delivery workflow—from scope to merged PRs—deploy through Lanes.</p>
+      </div>
+
+      <div class="queue-shell" aria-label="Example Fleet team activity">
+        <div class="queue-topbar"><span>TEAM / RELEASE-READINESS</span><span class="live"><span class="status-dot"></span> LIVE</span></div>
+        <div class="queue-summary">
+          <div><span class="label">NOW</span><strong>3 agents working</strong></div>
+          <div><span class="label">TODAY</span><strong>4 PRs merged</strong></div>
+        </div>
+        <ol class="queue-list">
+          <li><span class="row-state working">→</span><span><strong>Builder</strong><small>Harden webhook retries</small></span><code>PR #84</code><time>now</time></li>
+          <li><span class="row-state working">→</span><span><strong>QA</strong><small>Probe failed-delivery recovery</small></span><code>run 218</code><time>2m</time></li>
+          <li><span class="row-state working">→</span><span><strong>Specialist</strong><small>Review credential boundary</small></span><code>issue #79</code><time>5m</time></li>
+          <li><span class="row-state merged">✓</span><span><strong>Builder</strong><small>Add idempotency guard</small></span><code>merged #81</code><time>24m</time></li>
+        </ol>
+        <div class="queue-input"><span>Steer in Slack</span><span aria-hidden="true">“Prioritize the retry path.” ↵</span></div>
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="What Fleet coordinates">
+      <p>ONE TEAM, FOUR OPERATING PLANES</p>
+      <ul><li><span>01</span> Work</li><li><span>02</span> Access</li><li><span>03</span> Communication</li><li><span>04</span> Usage</li></ul>
+    </section>
+
+    <section id="operation" class="section section-ink" aria-labelledby="operation-title">
+      <div class="section-head"><p class="eyebrow">The operation</p><h2 id="operation-title">The agent is not the product.<br>The operating loop is.</h2><p>A useful team needs more than a model in a sandbox. Fleet keeps the work, credentials, communication, and runtime controls together so the team can keep moving without becoming another management job.</p></div>
+      <div class="loop-grid">
+        <article><span class="step">01 / DECLARE</span><h3>Give the team a goal and a queue.</h3><p>Connect the repos and accounts it needs. Group agents into one named team with shared access and billing.</p></article>
+        <article><span class="step">02 / EXECUTE</span><h3>Agents claim work and ship artifacts.</h3><p>Builders, specialists, and QA work from the same durable record, opening issues and pull requests as they go.</p></article>
+        <article><span class="step">03 / OBSERVE</span><h3>See work, not agent theater.</h3><p>Follow tasks, PRs, status, and usage. The proof is in committed artifacts and green CI—not a stream of hidden thoughts.</p></article>
+        <article><span class="step">04 / STEER</span><h3>Change course in plain language.</h3><p>Use Slack to ask for status, reprioritize, add work, pause, or resume. Fleet translates intent into the team’s queue.</p></article>
+      </div>
+    </section>
+
+    <section id="control" class="section control-section" aria-labelledby="control-title">
+      <div class="section-head compact"><p class="eyebrow">Control without babysitting</p><h2 id="control-title">One place to answer the questions that matter.</h2></div>
+      <div class="control-grid">
+        <article class="control-card"><p class="question">WHAT IS HAPPENING?</p><div class="mini-status"><span class="pulse"></span><strong>3 active</strong><span>2 ready</span><span>1 paused</span></div><h3>Live work and durable artifacts</h3><p>Tasks, issues, PRs, and CI make progress inspectable.</p></article>
+        <article class="control-card"><p class="question">WHAT CAN THEY TOUCH?</p><div class="access-tree"><span>release-readiness</span><span>├ github / app</span><span>├ slack / team</span><span>└ deploy / staging</span></div><h3>Team-scoped access</h3><p>Grant access to the team so new agents inherit the right accounts.</p></article>
+        <article class="control-card"><p class="question">HOW DO I CHANGE COURSE?</p><blockquote>Prioritize the retry path.<br><span>→ Queue updated. Builder notified.</span></blockquote><h3>Slack as the steering surface</h3><p>Ask, redirect, pause, and get status without operating internal tooling.</p></article>
+        <article class="control-card"><p class="question">WHERE IS THE BOUNDARY?</p><div class="meter"><span style="width:62%"></span></div><div class="meter-labels"><span>usage</span><span>pause / scale</span></div><h3>Usage and runtime controls</h3><p>See team-level consumption and stop or scale the operation deliberately.</p></article>
+      </div>
+    </section>
+
+    <section id="fit" class="section fit-section" aria-labelledby="fit-title">
+      <div class="section-head compact"><p class="eyebrow">Choose the front door</p><h2 id="fit-title">Fleet is the platform. Lanes is the engineering workflow.</h2><p>The right starting point depends on whether you need managed agents as infrastructure, or a complete path from an engineering brief to shipped pull requests.</p></div>
+      <div class="fit-grid">
+        <article class="fit-card fit-fleet"><div class="fit-label">FLEET</div><h3>Build your own agent operation.</h3><p>Provision and group managed agents, connect team-scoped accounts, and control status, communication, and usage.</p><ul><li>Managed agents and teams</li><li>Accounts and access</li><li>Runtime controls and usage</li><li>API-first platform direction</li></ul><a class="button button-ink" href="https://fleet.build/estimate">Get a Fleet estimate <span aria-hidden="true">↗</span></a></article>
+        <article class="fit-card fit-lanes"><div class="fit-label">LANES</div><h3>Run an engineering delivery team.</h3><p>Start with a brief. Lanes turns it into a plan and a managed team that works the queue, ships PRs, and reports through Slack.</p><ul><li>Scope and plan</li><li>Role-shaped delivery team</li><li>GitHub pull-request workflow</li><li>Slack steering and status</li></ul><a class="button button-signal" href="https://app.lanes.build">Deploy with Lanes <span aria-hidden="true">↗</span></a></article>
+      </div>
+    </section>
+
+    <section class="section fit-note" aria-labelledby="honest-title"><p class="eyebrow">An honest fit</p><h2 id="honest-title">Best when the work can be made concrete.</h2><div class="fit-note-grid"><div><h3>Strong fit</h3><p>Defined backend features, integrations, migrations, test coverage, CI/CD, and continuous backlog processing.</p></div><div><h3>Needs more steering</h3><p>Design-heavy, stakeholder-driven, or access-constrained work. Start narrow, review the artifacts, then expand.</p></div></div></section>
+
+    <section class="closing"><p class="kicker"><span class="status-dot"></span> READY WHEN YOU ARE</p><h2>Put a managed agent team to work.</h2><p>Get a Fleet estimate for the managed operation, or deploy through Lanes for the complete engineering delivery workflow.</p><div class="hero-actions"><a class="button button-signal" href="https://fleet.build/estimate">Get a Fleet estimate <span aria-hidden="true">↗</span></a><a class="button button-ghost light" href="https://app.lanes.build">Deploy with Lanes <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+
+  <footer><a class="brand" href="#top"><span class="brand-mark">F/</span><span>fleet</span></a><p>Managed agents, teams, access, communication, and usage.</p><p><a href="https://lanes.build">Lanes ↗</a> <a href="https://app.lanes.build">Sign in ↗</a></p></footer>
+</body>
+</html>
